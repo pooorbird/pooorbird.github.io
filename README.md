@@ -1,37 +1,81 @@
-## Welcome to GitHub Pages
+## Welcome to Bird's Blog
 
-You can use the [editor on GitHub](https://github.com/pooorbird/pooorbird.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+您可以访问我的[鸟窝](https://pooorbird.github.io/)获取我的动态
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 2017年7月22日 Markdown语法学习
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Markdown 是一种轻量化的模板语言。下面是一些实例，作为下次发博的参考。
 
 ```markdown
-Syntax highlighted code block
+这是一个大黑框orz 大黑框里面的东西都不会被模板转换。
+```
+# 这可能是一级标题
+## 这是一级标题下面的标题
+### 这不是一级标题下面的标题
+#### (⊙v⊙)嗯
 
-# Header 1
-## Header 2
-### Header 3
+这是没有顺序的列表
+- 滴，学生卡
+- 滴。
 
-- Bulleted
-- List
+这是有顺序的列表
+1. 起床
+2. 睡觉
 
-1. Numbered
-2. List
+**我变粗了**
 
-**Bold** and _Italic_ and `Code` text
+_斜眼笑_
 
-[Link](url) and ![Image](src)
+`chengxuyuankanzhezuishufudewenzigeshi`
+
+贴上我的照片
+![帅](http://qq.yh31.com/tp/zjbq/201506211824137045.jpg)
+
+子曾经曰过
+
+> 知识就是力量
+
+下面是一段js
+```javascript
+function sayHelloTosb(name) {
+ 	alert("hello" + name);
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+这个太Low看起来没用
 
-### Jekyll Themes
+    function fancyAlert(arg) {
+      if(arg) {
+        $.facebox({div:'#foo'})
+      }
+    }
+    
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pooorbird/pooorbird.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+任务清单
+- [x] 吃
+- [x] 睡
+- [x] 吃
+- [ ] 睡
 
-### Support or Contact
+您的支持是我更新的动力吗？不是 :+1:
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+被占用符号的转义
+
+\*天上的星星\*
+
+\*参北斗啊\*
+
+```java
+public class SayHello {
+	public void main(String[] args) {
+		System.out.println("END");
+	}
+}
+```
+
+```c
+#include <stdio.h>
+main {
+	print("END");
+}
+```
