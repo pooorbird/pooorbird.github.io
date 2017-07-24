@@ -41,9 +41,7 @@
 百度后。。。group by 优先执行,也就是说不管怎么排序分组后就没有顺序了。
 最后使用的方案是子查询`SELECT uu.time FROM (SELECT u.time FROM user u ORDER BY u.time DESC LIMIT 1) uu GROUP BY uu.name`
 
-```markdown
--- END --
-```
+***
 
 ### 2017年7月22日 Markdown语法学习
 
@@ -121,4 +119,8 @@ public class SayHello {
 main {
 	print("END");
 }
+```
+
+```sqlserver
+select sysdate() FROM dual;
 ```
