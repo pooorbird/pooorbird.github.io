@@ -34,12 +34,23 @@
 </table>
 - 查询所有人最近的访问时间
 
-我的第一反应`SELECT MAX(u.time) FROM user u GROUP BY u.name`取最大值然后分组就可以了,结果却不是这样。
+首先我是这样做的
+```SQL
+SELECT MAX(u.time) FROM user u GROUP BY u.name
+```
+取最大值然后分组就可以了,结果却不是这样。
 
-第二反应`SELECT u.time FROM user u ORDER BY u.time DESC GROUP BY u.name`先排序再按人分组，结果和上面一样。本来就是一样的嘛.
+改进后
+```SQL
+SELECT u.time FROM user u ORDER BY u.time DESC GROUP BY u.name
+```
+先排序再按人分组，结果和上面一样。本来就是一样的嘛.
 
 百度后。。。group by 优先执行,也就是说不管怎么排序分组后就没有顺序了。
-最后使用的方案是子查询`SELECT uu.time FROM (SELECT u.time FROM user u ORDER BY u.time DESC LIMIT 1) uu GROUP BY uu.name`
+最后使用的方案是子查询
+```SQL
+SELECT uu.time FROM (SELECT u.time FROM user u ORDER BY u.time DESC LIMIT 1) uu GROUP BY uu.name
+```
 
 ***
 
